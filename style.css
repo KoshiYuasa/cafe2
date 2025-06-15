@@ -22,7 +22,15 @@ h2 {
   background: none;
   margin: 10px;
   transition: transform 0.2s;
+  animation: floatEmoji 2s ease-in-out infinite; /* 👈 これ追加！ */
 }
+
+@keyframes floatEmoji {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 
 .emoji-button:hover {
   transform: scale(1.2);
@@ -92,3 +100,5 @@ h2 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+

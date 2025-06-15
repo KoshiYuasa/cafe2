@@ -1,0 +1,44 @@
+body {
+  font-family: Verdana, sans-serif;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+canvas {
+  width: 800px !important;
+  height: 800px !important;
+}
+
+#most-voted-emoji {
+  font-size: 20rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  animation: rollEmoji 5s ease-in-out infinite;
+  display: inline-block;
+}
+
+
+#emoji-comment {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 8rem;
+}
+
+@keyframes rollEmoji {
+  0%   { transform: rotate(0deg) translateX(0); }
+  25%  { transform: rotate(-15deg) translateX(-10px); }
+  50%  { transform: rotate(0deg) translateX(0); }
+  75%  { transform: rotate(15deg) translateX(10px); }
+  100% { transform: rotate(0deg) translateX(0); }
+}
+
