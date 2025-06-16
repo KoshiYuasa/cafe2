@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Survey Summary</title>
+    <title>Survey Summary by Time Slot</title>
     <link rel="stylesheet" href="table.css" />
 </head>
 <body>
 <h1>Daily Survey Summary</h1>
-<table id="summary-table">
+
+<h2>Breakfast</h2>
+<table id="morning-table">
     <thead>
     <tr>
         <th>Date</th>
@@ -16,12 +18,50 @@
         <th>3</th>
         <th>4</th>
         <th>5</th>
+        <th>Average</th>
     </tr>
     </thead>
     <tbody>
-    <!-- JSで自動挿入 -->
+    <!-- morning data inserted by JS -->
     </tbody>
 </table>
+
+<h2>Lunch</h2>
+<table id="afternoon-table">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>Average</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- afternoon data inserted by JS -->
+    </tbody>
+</table>
+
+<h2>Dinner</h2>
+<table id="evening-table">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>Average</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- evening data inserted by JS -->
+    </tbody>
+</table>
+
 <script type="module" src="tableScript.js"></script>
 </body>
 </html>

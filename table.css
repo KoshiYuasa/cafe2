@@ -22,3 +22,8 @@ th {
   background-color: #333;
   color: white;
 }
+
+td:last-child {
+  font-weight: bold;
+  background-color: #f0f8ff;
+}
