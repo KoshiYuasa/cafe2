@@ -33,11 +33,11 @@ function updateHeadingByTime() {
   const headingEl = document.querySelector('h1');
 
   if (totalMins >= 435 && totalMins <= 629) {
-    headingEl.textContent = "Breakfast is";
+    headingEl.textContent = "Today's breakfast is";
   } else if (totalMins >= 630 && totalMins <= 989) {
-    headingEl.textContent = "Lunch is";
+    headingEl.textContent = "Today's lunch is";
   } else if (totalMins >= 990 && totalMins <= 1230) {
-    headingEl.textContent = "Dinner is";
+    headingEl.textContent = "Today's dinner is";
   } else {
     headingEl.textContent = "Outside meal time";
   }
