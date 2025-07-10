@@ -1,104 +1,104 @@
 h1{
-font-size:80px;
-font-family: Verdana, sans-serif;
-}
-
-body {
-  background-color: white;
-  color: black;
-  font-family: sans-serif;
-  text-align: center;
-  margin-top: 50px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-.emoji-button {
-  font-size: 12rem;
-  cursor: pointer;
-  border: none;
-  background: none;
-  margin: 10px;
-  transition: transform 0.2s;
-  animation: floatEmoji 2s ease-in-out infinite; /* 👈 これ追加！ */
-}
-
-@keyframes floatEmoji {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
-
-.emoji-button:hover {
-  transform: scale(1.2);
-}
-
-
-
-
-@keyframes pop {
-  0%   { transform: scale(1); opacity: 1; }
-  25%  { transform: scale(1.5); opacity: 1; }
-  50%  { transform: scale(2); opacity: 1; }
-  75%  { transform: scale(1.5); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-.emoji-button.clicked {
-  animation: pop 0.25s ease;
-}
-
-
-
-
-
-
-
-.floating-emoji {
-  position: absolute;
-  animation: floatUp 1s ease-out forwards;
-  font-size: 2.5rem;
-  pointer-events: none;
-}
-
-@keyframes floatUp {
-  0% {
-    opacity: 0;
-    transform: translateY(0) scale(0.3);
+  font-size:90px;
+  font-family: Verdana, sans-serif;
   }
-  30% {
-    opacity: 1;
-    transform: translateY(-10px) scale(1.4);
+  
+  body {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
   }
-  100% {
-    opacity: 0;
-    transform: translateY(-100px) scale(1.2);
+  
+  h2 {
+    margin-bottom: 10px;
   }
-}
-
-#thank-you {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  display: none;
-  z-index: 999;
-  opacity: 0.9;
-}
-
-
-#message {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-
+  
+  .emoji-button {
+    font-size: 9rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    margin: 10px;
+    transition: transform 0.2s;
+    animation: floatEmoji 2s ease-in-out infinite; /* 👈 これ追加！ */
+  }
+  
+  @keyframes floatEmoji {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
+  .emoji-button:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  
+  
+  @keyframes pop {
+    0%   { transform: scale(1); opacity: 1; }
+    25%  { transform: scale(1.5); opacity: 1; }
+    50%  { transform: scale(2); opacity: 1; }
+    75%  { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .emoji-button.clicked {
+    animation: pop 0.25s ease;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .floating-emoji {
+    position: absolute;
+    animation: floatUp 1s ease-out forwards;
+    font-size: 2.5rem;
+    pointer-events: none;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.3);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-10px) scale(1.4);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100px) scale(1.2);
+    }
+  }
+  
+  #thank-you {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: none;
+    z-index: 999;
+    opacity: 0.9;
+  }
+  
+  
+  #message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  
